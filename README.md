@@ -23,6 +23,7 @@ Usage
 ```ruby
         require 'box'
 
+        ### Dump sample
         writer = Box::Writer.new
         
         writer.add("data1", "asdf1234")
@@ -35,7 +36,7 @@ Usage
         writer.dump                     # {\"data2\":\"eJwrLE8tMjQyNgEADV0Cig==\\n\"}
         
         
-        
+        ### Load sample
         reader = Box::Reader.new
         
         # reader.read("a.box")

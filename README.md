@@ -30,16 +30,16 @@ Usage
         
         writer.delete("data1")
         
-        writer.write("a.box")   # dump and write to file
+        writer.write("a.box")           # dump and write to file
         
-        writer.dump             # {\"data2\":\"eJwrLE8tMjQyNgEADV0Cig==\\n\"}
+        writer.dump                     # {\"data2\":\"eJwrLE8tMjQyNgEADV0Cig==\\n\"}
         
         
         
         reader = Box::Reader.new
         
         # reader.read("a.box")
-        loaded = reader.load( writer.dump )
+        loaded = reader.load( writer.dump ) # {"data2"=>"qwer1234"}
         
-        puts loaded["data2"]    # qwer1234
+        puts loaded["data2"]            # qwer1234
 ```

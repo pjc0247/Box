@@ -36,6 +36,8 @@ Usage
         writer.dump                     # {\"data2\":\"eJwrLE8tMjQyNgEADV0Cig==\\n\"}
         
         
+        
+        
         ### Load sample
         reader = Box::Reader.new
         

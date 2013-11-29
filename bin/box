@@ -7,6 +7,15 @@ else
 	cmd = ARGV[0].downcase
 
 	case cmd
+		when "list"
+			box = Box::Reader.new
+				
+			data = box.read( ARGV[1] )
+
+			puts		"%10s %20s" % ["size", "name"]   
+			data.each do |k,v|
+				puts	"%10d %20s" % [v.size, k]
+			end
 		when "pack"
 			box = Box::Writer.new
 
